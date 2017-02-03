@@ -1,7 +1,7 @@
 #**SLOPPY DICE** 
 ___
 
-`BECAUSE ITS GONNA GET SLOPPY` 
+_BECAUSE ITS GONNA GET SLOPPY_
 
 
 ####This is a Super Fun dice game!     
@@ -21,6 +21,8 @@ Please feel free to use IRL cup of spirits in place of virtual glass.
 
 
 ######* full disclosure: rules slightly bent (pun intended) to accomodate my MVP. see user stories for stretch goals that may or may not ammend game rules  
+
+#[myTrello](https://trello.com/b/PpWyqI1W/ga-project-1)
 
 
 
