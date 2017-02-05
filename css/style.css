@@ -1,0 +1,23 @@
+* {
+  background: white;
+  margin: auto;
+
+}
+
+#header-banner {
+
+  display: block;
+  margin: auto;
+}
+
+#main-logo {
+
+    display: block;
+    margin: auto;
+
+  }
+
+  h1 {
+    display: block;
+    margin: auto;
+  }
