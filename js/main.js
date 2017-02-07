@@ -7,28 +7,42 @@ $(document).ready(function(){
   var shooter2 = ''
   var rollTotal = ''
 
-    function rollDiceOne(min, max) {
+    function rollDice(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    $('#diceOne').html(Math.floor(Math.random() * (max - min + 1)) + min);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+  /*
+  return Math.....
 
-    function rollDiceTwo(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    $('#diceTwo').html(Math.floor(Math.random() * (max - min + 1)) + min);
-  }
+  $('#diceOne').html(rollDice(min, max));
+
+  */
+
+  //   function rollDiceTwo(min, max) {
+  //   min = Math.ceil(min);
+  //   max = Math.floor(max);
+  //   $('#diceTwo').html(Math.floor(Math.random() * (max - min + 1)) + min);
+  // }
 
 
   $('#buttonOne').on('click', function () {
-    rollDiceOne(1,6)
-    rollDiceTwo(1,6);
+    $('#diceOne').html(rollDice(1,6));
+    $('#diceTwo').html(rollDice(1,6));
+
+  })
+
+  $('#buttonTwo').on('click', function () {
+    $('#diceOne').html(rollDice(1,6));
+    $('#diceTwo').html(rollDice(1,6));
+
+  })
     // rollDiceTwo(1,6)
 
 
     // gameWinner(shooter1)
     // gameWinner(shooter2)
-  })
+
 
   // $('#buttonTwo').on('click', function () {
   //   rollDiceOne(1,6)
@@ -40,7 +54,7 @@ $(document).ready(function(){
 // game winner logic
   function gameWinner(player) {
     for (var i = 0; i < diceOne.length; i++)
-      for (var j = 0; j < diceOne.length; j++) {
+      for (var j = 0; j < diceTwo.length; j++) {
       if (diceOne === diceTwo) {
         alert(player + " wins!")
     } else if (diceOne + diceTwo === 7) {
