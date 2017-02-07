@@ -3,35 +3,55 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <canvas id="playArea" width="500" height:"500" ></canvas>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <title>sloPPy dice || play now</title>
   </head>
   <body>
+    <canvas id="playArea" width="500" height:"500" ></canvas>
     <header>
       <img id="main-logo" src="images/moski-white-logo.png" alt="moski | produces">
-      <br>
-      <br>
-      <br>
+
       <img id="header-banner" src="images/coedo-banner.png" alt="coedo">
-      <br>
-      <br>
-      <br>
+
       <img id="game-logo" src="images/sloppy-dice-logo.png" alt="Sloppy Dice">
    </header>
    <main>
 
      <h1>Don't use IRL dice!  Save the elephants & rhinos</h1>
+
+
+<!-- GAME PLAY AREA + DICE -->
      <div id="rollCage">
 
        //dice1 dice 2... sides one, two...
-       <div>
-         <div>
+       <div id="diceOne">
 
-         </div>
+
+       <div id="diceTwo">
+
+
+
        </div>
      </div>
+<!-- SHOOTERS -->
+     <div id="shooter1">Shooter Alpha</div>
+       <div id="containerButton1">
+        <button id="buttonOne">Roll em Shooter 1</button>
+      </div>
+
+     <div id="shooter2">Shooter Bravo</div>
+       <div id="containerButton2">
+        <button id="buttonTwo">Roll em' Shooter 2</button>
+      </div>
+
+<!-- // SCOREBOARD -->
+     <div id="scoreboard">Scoreboard Here</div>
+       <div class="shooterOneScore">shooter one score</div>
+       <div class="shooterTwoScore">shooter two score</div>
+
+
    </main>
 
 
