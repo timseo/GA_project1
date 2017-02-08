@@ -11,42 +11,54 @@
   <body>
     <canvas id="playArea" width="500" height:"500" ></canvas>
     <header>
-      <img id="main-logo" src="images/moski-white-logo.png" alt="moski | produces">
+      <img id="main-logo" src="images/moski-greyscale-logo.png" alt="moski | produces">
 
       <img id="header-banner" src="images/coedo-banner.png" alt="coedo">
 
       <img id="game-logo" src="images/sloppy-dice-logo.png" alt="Sloppy Dice">
+
    </header>
    <main>
 
-     <h1>Don't use IRL dice!  Save the elephants & rhinos</h1>
+     <h1>Sloppy Dice rules are simple! All you have to do is grab a choice beverage (make sure you have enough.) Start rolling and follow onscreen instructions! ..... Get sloppy!</h1>
 
 
 <!-- GAME PLAY AREA + DICE -->
-     <div id="rollCage">
 
-       //dice1 dice 2... sides one, two...
-       <div id="diceOne"></div>
-
-
-       <div id="diceTwo"></div>
-
-     </div>
 <!-- SHOOTERS -->
      <div id="shooter1">Shooter Alpha</div>
        <div id="containerButton1">
-        <button id="buttonOne">Roll em Shooter 1</button>
+        <button id="buttonOne">Press to play Shooter Alpha</button>
+      </div>
+
+      <div id="rollCage">
+
+        <div id="scoreboard">Here's what you rolled!</div>
+
+          <div id="shooterOneScore"></div>
+
+          <div id="shooterTwoScore"></div>
+
+          <img id="dice-logo" src="images/thumb_COLOURBOX12250672.jpg" alt="Dice">
+
+
+        <div id="diceOne"></div>
+        <div id="diceTwo"></div>
+
       </div>
 
      <div id="shooter2">Shooter Bravo</div>
-       <div id="containerButton2">
-        <button id="buttonTwo">Roll em' Shooter 2</button>
-      </div>
+       <!-- <div id="containerButton2"> -->
+        <button id="buttonTwo">Press to play Shooter Bravo</button>
+      <!-- </div> -->
 
 <!-- // SCOREBOARD -->
-     <div id="scoreboard">Scoreboard Here</div>
-       <div id="shooterOneScore">score place holder</div>
-       <div id="shooterTwoScore">score place holder</div>
+
+
+    <div id="match">
+      <div id="playerOneWins"></div>
+      <div id="playerTwoWins"></div>
+    </div>
 
 
    </main>

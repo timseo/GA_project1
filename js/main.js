@@ -23,14 +23,18 @@ $(document).ready(function() {
     $shooterOneScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
     if ($diceOne === $diceTwo) {
-      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo");
+      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo. Keep rolling Shooter Alpha");
+      $('#shooter1').fadeOut('fast');
     } else if ($shooterOneScore.text() == 7) {
-      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo");
+      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo. Keep rolling Shooter Alpha");
     } else if ($shooterOneScore.text() == 11) {
-      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo");
+      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo. Keep rolling Shooter Alpha");
+    } else {
+      alert("Shooter Bravo, your turn.  Shoot em!");
+      return $('#shooter1').text('');
     }
 
-    // switch turns here?   assign a drink to shooter 2 and then switch turns
+    //switch function
   })
 
   $('#buttonTwo').on('click', function() {
@@ -42,14 +46,17 @@ $(document).ready(function() {
     $shooterTwoScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
     if ($diceOne === $diceTwo) {
-      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha");
+      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha. Keep rolling Shooter Bravo");
     } else if ($shooterTwoScore.text() == 7) {
-      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha");
+      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha. Keep rolling Shooter Bravo");
     } else if ($shooterTwoScore.text() == 11) {
-      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha");
+      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha. Keep rolling Shooter Bravo");
+    } else {
+      alert("Shooter Alpha, your turn.  Shoot em!");
+      return $('#shooter2').text('');
     }
 
-    // switch turns here?   assign a drink to shooter 2 and then switch turns
+    //switch funciton here
 
   })
   // rollDiceTwo(1,6)

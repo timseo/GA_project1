@@ -1,31 +1,87 @@
 * {
   /*background: black;*/
   margin: auto;
-
 }
 
-#header-banner {
-
-  display: block;
-  margin: auto;
+@font-face {
+  font-family: hillBelly;
+  src: src("font/hillBelly_TRIAL.otf")
 }
 
 #main-logo {
+  display: block;
+  margin: auto;
+  margin-top: 2px;
+}
 
-    display: block;
-    margin: auto;
-    margin-bottom: 80px;
-
-  }
+#header-banner {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
 
 #game-logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
 
-      display: block;
-      margin-left: 320px;
+#dice-logo {
+  max-width: 100px;
+  max-height: 100px;
+}
 
-  }
+#rollCage {
+  width: 250px;
+  height: 200px;
+  border: solid aqua 5px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
 
-  h1 {
-    display: block;
-    margin: auto;
-  }
+#shooter1 {}
+
+
+#buttonOne {
+  background: blue;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: none;
+  float: left;
+  margin: 100px;
+  display: inline;
+  outline: none;
+}
+
+#buttonTwo {
+  background: red;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: 0;
+  float: right;
+  margin: 100px;
+  display: inline;
+  outline: none;
+
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+h1 {
+  display: block;
+  margin: auto;
+  color: grey;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+main {
+  margin-bottom: 100px;
+}
