@@ -22,6 +22,15 @@ $(document).ready(function() {
     var $diceTwo = $('#diceTwo').text();
     $shooterOneScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
+    if ($diceOne === $diceTwo) {
+      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo");
+    } else if ($shooterOneScore.text() == 7) {
+      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo");
+    } else if ($shooterOneScore.text() == 11) {
+      return $('#shooter1').text("Shooter Alpha wins! Please drink, Shooter Bravo");
+    }
+
+    // switch turns here?   assign a drink to shooter 2 and then switch turns
   })
 
   $('#buttonTwo').on('click', function() {
@@ -31,6 +40,16 @@ $(document).ready(function() {
     var $diceOne = $('#diceOne').text();
     var $diceTwo = $('#diceTwo').text();
     $shooterTwoScore.html(parseInt($diceOne) + parseInt($diceTwo));
+
+    if ($diceOne === $diceTwo) {
+      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha");
+    } else if ($shooterTwoScore.text() == 7) {
+      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha");
+    } else if ($shooterTwoScore.text() == 11) {
+      return $('#shooter2').text("Shooter Bravo wins! Please drink, Shooter Alpha");
+    }
+
+    // switch turns here?   assign a drink to shooter 2 and then switch turns
 
   })
   // rollDiceTwo(1,6)
@@ -47,19 +66,19 @@ $(document).ready(function() {
 
 
   // game winner logic
-  function gameWinner(player) {
-    for (var i = 0; i < diceOne.length; i++)
-      for (var j = 0; j < diceTwo.length; j++) {
-        if (diceOne === diceTwo) {
-          alert(player + " wins!")
-        } else if (diceOne + diceTwo === 7) {
-          alert(player + " wins!")
-        } else if (diceOne + diceTwo === 11) {
-          alert(player + " wins!")
-        }
-        return gameWinner(shooter1)
-      }
-  }
+  // function gameWinner(player) {
+  //   for (var i = 0; i < diceOne.length; i++)
+  //     for (var j = 0; j < diceTwo.length; j++) {
+  //       if (diceOne === diceTwo) {
+  //         alert(player + " wins!")
+  //       } else if (diceOne + diceTwo === 7) {
+  //         alert(player + " wins!")
+  //       } else if (diceOne + diceTwo === 11) {
+  //         alert(player + " wins!")
+  //       }
+  //       return gameWinner(shooter1)
+  //     }
+  // }
   // tournament winner logic
 
   function tournWinner() {
