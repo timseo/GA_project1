@@ -27,6 +27,10 @@ $(document).ready(function() {
   $('#buttonTwo').on('click', function() {
     $('#diceOne').html(rollDice(1, 6));
     $('#diceTwo').html(rollDice(1, 6));
+    var $shooterTwoScore = $('#shooterTwoScore').eq(0);
+    var $diceOne = $('#diceOne').text();
+    var $diceTwo = $('#diceTwo').text();
+    $shooterTwoScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
   })
   // rollDiceTwo(1,6)
