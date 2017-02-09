@@ -40,7 +40,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   float: left;
-  margin-left: 120px;
+  margin-left: 150px;
   border-radius: 8%;
 
 }
@@ -73,8 +73,8 @@
   background: black;
   color: aqua;
   font-size: 25px;
-  height: 310px;
-  width: 310px;
+  height: 220px;
+  width: 220px;
   border-radius: 100%;
   border: 0;
   float: left;
@@ -89,12 +89,12 @@
   background: black;
   color: aqua;
   font-size: 25px;
-  height: 310px;
-  width: 310px;
+  height: 220px;
+  width: 220px;
   border-radius: 100%;
   border: 0;
   float: left;
-  margin-left: 130px;
+  margin-left: 12%;
   display: block;
   outline: none;
   margin-right: 130px;
@@ -115,7 +115,7 @@
   padding-bottom: 15px;
 }
 
-#shooterOneScore {
+#diceTotal {
   font-size: 50px;
   font-family: 'Anton', sans-serif;
   color: red;
@@ -126,18 +126,43 @@
   border-radius: 15%;
 }
 
+
 #match {
   background-color: black;
   width: 100%;
-  height: 150px;
-  margin-top: 0px;
+  height: 175px;
+  margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 60px;
   text-align: center;
   font-family: 'Anton', sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   color: aqua;
-  position: absolute;
+  display: inline-block;
+}
+
+#playerOneWins {
+  color: red;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  display: inline;
+  margin-right: 30px;
+
+}
+
+#playerTwoWins {
+  color: red;
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  display: inline;
+  margin-left: 30px;
+
+}
+
+#tournamentColon {
+  color: grey;
+  font-size: 55px;
+
 }
 
 #diceOne, #diceTwo {
@@ -192,6 +217,7 @@ h3 {
   color: red;
 }
 main {
-  margin-bottom: 500px;
+  /*margin-bottom: 500px;*/
+  /*height: 800px;*/
 
 }
