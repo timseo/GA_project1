@@ -3,8 +3,8 @@ $(document).ready(function() {
 
   var diceOne = [1, 2, 3, 4, 5, 6]
   var diceTwo = [1, 2, 3, 4, 5, 6]
-  var shooter1 = ''
-  var shooter2 = ''
+  var alphaScore = ''
+  var bravoScore = ''
   var rollTotal = ''
 
   function rollDice(min, max) {
