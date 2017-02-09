@@ -3,9 +3,10 @@ $(document).ready(function() {
 
   var diceOne = [1, 2, 3, 4, 5, 6]
   var diceTwo = [1, 2, 3, 4, 5, 6]
-  score = 1;
-  $bravoScore = $('#playerTwoWins');
   $alphaScore = $('#playerOneWins');
+  $bravoScore = $('#playerTwoWins');
+  ascore = 1;
+  bscore = 1;
   var rollTotal = 0;
 
   function rollDice(min, max) {
@@ -25,18 +26,18 @@ $(document).ready(function() {
 
           if ($diceOne === $diceTwo) {
             return $('#messageBox').html("WINNER! <br>  <h3>Bravo DRINK! <br>   KEEP ROLLING Alpha!</h3>"),
-            $('#playerTwoWins').html(score++);
+            $('#playerTwoWins').html(ascore++);
 
 
 
           } else if ($shooterOneScore.text() == 7) {
             return $('#messageBox').html("WINNER! <br>  <h3>Bravo DRINK! <br>   KEEP ROLLING Alpha!</h3>"),
-            $('#playerTwoWins').html(score++);
+            $('#playerTwoWins').html(ascore++);
 
 
           } else if ($shooterOneScore.text() == 11) {
             return $('#messageBox').html("WINNER! <br>  <h3>Bravo DRINK! <br>   KEEP ROLLING Alpha!</h3>"),
-            $('#playerTwoWins').html(score++);
+            $('#playerTwoWins').html(ascore++);
 
 
           } else {
@@ -48,13 +49,6 @@ $(document).ready(function() {
           }
 
   })
-// if bravoScore < 10 return playerTwoWins.text
-  // function matchWinner() {
-  //   if (bravoScore < 10) {
-  //     return $('#playerTwoWins').text(bravoScore);
-  //   }
-  // }
-
 
 
   $('#buttonTwo').on('click', function() {
@@ -67,13 +61,16 @@ $(document).ready(function() {
 
     if ($diceOne === $diceTwo) {
       return $('#messageBox').html("WINNER! <br> <h3>Alpha DRINK! <br>    KEEP ROLLING BRAVO!</h3>"),
-      $('#playerOneWins').html(score++);
+      $('#playerOneWins').html(bscore++);
+
     } else if ($shooterTwoScore.text() == 7) {
       return $('#messageBox').html("WINNER! <br> <h3>Alpha DRINK! <br>    KEEP ROLLING BRAVO!</h3>"),
-      $('#playerOneWins').html(score++);
+      $('#playerOneWins').html(bscore++);
+
     } else if ($shooterTwoScore.text() == 11) {
       return $('#messageBox').html("WINNER!  <br> <h3>Alpha DRINK! <br>    KEEP ROLLING BRAVO!</h3>"),
-      $('#playerOneWins').html(score++);
+      $('#playerOneWins').html(bscore++);
+
     } else {
       $('#buttonTwo').css('visibility','hidden')
       $('#buttonOne').css('visibility','visible')
