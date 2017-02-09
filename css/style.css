@@ -32,7 +32,7 @@
 
 #rollCage {
   width: 400px;
-  height: 300px;
+  height: 400px;
   border: dotted aqua 5px;
   text-align: center;
   clear: inherit;
@@ -59,7 +59,7 @@
   height: 150px;
   margin-top: 50px;
   margin-bottom: 20px;
-  padding-top: 60px;
+  padding-top: 40px;
   text-align: center;
   font-family: 'Anton', sans-serif;
   font-size: 40px;
@@ -77,7 +77,7 @@
   border: 0;
   float: left;
   outline: none;
-  margin-left: 130px;
+  margin-left: 19%;
   margin-top: 20px;
   font-family: 'Anton', sans-serif;
 }
@@ -108,11 +108,13 @@
   margin-top: 15px;
   font-family: 'Anton', sans-serif;
   font-size: 30px;
+  color: grey;
 }
 
 #shooterOneScore {
   font-size: 50px;
   font-family: 'Anton', sans-serif;
+  color: red;
 }
 
 #match {
@@ -129,6 +131,22 @@
   position: absolute;
 }
 
+#diceOne, #diceTwo {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  padding: 17px;
+}
+
+
+
+.dice {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  color: red;
+}
+
 h1 {
   display: block;
   margin: auto;
@@ -136,13 +154,32 @@ h1 {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 45px;
   font-family: 'Bahiana', cursive;
   text-align: center;
 
 
 }
 
+h2 {
+  display: block;
+  margin: auto;
+  color: gray;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: 'Bahiana', cursive;
+  text-align: center;
+
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color: red;
+}
 main {
   margin-bottom: 500px;
 

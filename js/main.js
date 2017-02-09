@@ -23,14 +23,14 @@ $(document).ready(function() {
     $shooterOneScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
     if ($diceOne === $diceTwo) {
-      return $('#messageBox').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
+      return $('#messageBox').html("WINNER! <br>  <h3>please drink Bravo    KEEP ROLLING Alpha!</h3>");
       // $('#shooter1').fadeOut('fast');
     } else if ($shooterOneScore.text() == 7) {
-      return $('#messageBox').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
+      return $('#messageBox').html("WINNER! <br>  <h3>please drink Bravo    KEEP ROLLING Alpha!</h3>");
     } else if ($shooterOneScore.text() == 11) {
-      return $('#messageBox').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
+      return $('#messageBox').html("WINNER! <br>  <h3>please drink Bravo    KEEP ROLLING Alpha!</h3>");
     } else {
-      alert("Alpha loses. your turn Bravo.  Shoot em!");
+      return $('#messageBox').html("Alpha loses. <br> <h3>your turn Bravo.  Shoot em!</h3>");
       return $('#messageBox').text('');
     }
 
@@ -46,13 +46,13 @@ $(document).ready(function() {
     $shooterTwoScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
     if ($diceOne === $diceTwo) {
-      return $('#messageBox').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
+      return $('#messageBox').html("WINNER! <br> <h3>please drink Alpha    KEEP ROLLING BRAVO!</h3>");
     } else if ($shooterTwoScore.text() == 7) {
-      return $('#messageBox').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
+      return $('#messageBox').html("WINNER! <br> <h3>please drink Alpha    KEEP ROLLING BRAVO!</h3>");
     } else if ($shooterTwoScore.text() == 11) {
-      return $('#messageBox').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
+      return $('#messageBox').html("WINNER!  <br> <h3>please drink Alpha    KEEP ROLLING BRAVO!</h3>");
     } else {
-      alert("Bravo Loses. your turn Alpha.  Shoot em!");
+      return $('#messageBox').html("Bravo Loses. <br> <h3>your turn Alpha.  Shoot em!</h3>");
       return $('#messageBox').text('');
     }
 
