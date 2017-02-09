@@ -16,6 +16,8 @@
 
 #header-banner {
   display: block;
+  max-height: 150px;
+  max-width: 1000px;
   margin: auto;
   margin-top: 100px;
 }
@@ -32,45 +34,75 @@
 }
 
 #rollCage {
-  width: 250px;
-  height: 200px;
-  border: solid aqua 5px;
-  display: block;
-  margin: auto;
+  width: 400px;
+  height: 300px;
+  border: dotted aqua 5px;
+  text-align: center;
+  clear: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  margin-left: 120px;
+
+}
+
+#shooter1 {
+  width: 500px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-#shooter1 {}
-
+#shooter2 {
+  width: 500px;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 #buttonOne {
-  background: blue;
-  height: 200px;
-  width: 200px;
+  background: black;
+  color: aqua;
+  font-size: 25px;
+  height: 310px;
+  width: 310px;
   border-radius: 100%;
-  border: none;
+  border: 0;
   float: left;
-  margin: 100px;
-  display: inline;
   outline: none;
+  margin-left: 130px;
+  margin-top: 20px;
 }
 
 #buttonTwo {
-  background: red;
-  height: 200px;
-  width: 200px;
+  background: black;
+  color: aqua;
+  font-size: 25px;
+  height: 310px;
+  width: 310px;
   border-radius: 100%;
   border: 0;
-  float: right;
-  margin: 100px;
-  display: inline;
+  float: left;
+  margin-left: 130px;
+  display: block;
   outline: none;
-
+  margin-right: 130px;
+  margin-top: 20px;
 }
 
-.disabled {
+/*.disabled {
   opacity: 0.6;
   cursor: not-allowed;
+  can use this to force switch turns
+}*/
+#scoreboard {
+  margin-top: 15px;
+}
+#shooterOneScore {
+  font-size: 40px;
+  font-style: italic;
 }
 
 h1 {
@@ -80,8 +112,9 @@ h1 {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 30px;
+  font-size: 20px;
 }
 
 main {
-  margin-bottom: 100px;
+  margin-bottom: 600px;
 }
