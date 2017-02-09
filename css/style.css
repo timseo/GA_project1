@@ -6,6 +6,7 @@
 #main-logo {
   display: block;
   margin: auto;
+  margin-top: -30px;
 }
 
 #header-banner {
@@ -19,7 +20,8 @@
 #game-logo {
   display: block;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 25px;
 
 }
 
