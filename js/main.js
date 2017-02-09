@@ -23,15 +23,15 @@ $(document).ready(function() {
     $shooterOneScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
     if ($diceOne === $diceTwo) {
-      return $('#shooter1').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
+      return $('#messageBox').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
       // $('#shooter1').fadeOut('fast');
     } else if ($shooterOneScore.text() == 7) {
-      return $('#shooter1').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
+      return $('#messageBox').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
     } else if ($shooterOneScore.text() == 11) {
-      return $('#shooter1').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
+      return $('#messageBox').text("WINNER!  please drink Bravo    KEEP ROLLING Alpha!");
     } else {
       alert("Alpha loses. your turn Bravo.  Shoot em!");
-      return $('#shooter1').html('<h2>' + 'Alpha, You Lose' + '</h2>').text('');
+      return $('#messageBox').text('');
     }
 
     //switch function
@@ -46,14 +46,14 @@ $(document).ready(function() {
     $shooterTwoScore.html(parseInt($diceOne) + parseInt($diceTwo));
 
     if ($diceOne === $diceTwo) {
-      return $('#shooter2').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
+      return $('#messageBox').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
     } else if ($shooterTwoScore.text() == 7) {
-      return $('#shooter2').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
+      return $('#messageBox').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
     } else if ($shooterTwoScore.text() == 11) {
-      return $('#shooter2').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
+      return $('#messageBox').text("WINNER!  please drink Alpha    KEEP ROLLING BRAVO!");
     } else {
       alert("Bravo Loses. your turn Alpha.  Shoot em!");
-      return $('#shooter2').text('');
+      return $('#messageBox').text('');
     }
 
     //switch function here

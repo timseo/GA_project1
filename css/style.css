@@ -3,15 +3,9 @@
   margin: auto;
 }
 
-@font-face {
-  font-family: hillBelly;
-  src: src("font/hillBelly_TRIAL.otf")
-}
-
 #main-logo {
   display: block;
   margin: auto;
-  margin-top: 2px;
 }
 
 #header-banner {
@@ -26,6 +20,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 100px;
+
 }
 
 #dice-logo {
@@ -52,14 +47,22 @@
   margin-top: 20px;
   margin-bottom: 50px;
   text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
 }
 
-#shooter2 {
-  width: 500px;
-  height: 100px;
+#messageBox {
+  background-color: aqua;
+  width: 100%;
+  height: 150px;
   margin-top: 50px;
   margin-bottom: 20px;
+  padding-top: 60px;
   text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+  color: red;
+
 }
 
 #buttonOne {
@@ -74,6 +77,7 @@
   outline: none;
   margin-left: 130px;
   margin-top: 20px;
+  font-family: 'Anton', sans-serif;
 }
 
 #buttonTwo {
@@ -90,6 +94,7 @@
   outline: none;
   margin-right: 130px;
   margin-top: 20px;
+  font-family: 'Anton', sans-serif;
 }
 
 /*.disabled {
@@ -99,10 +104,12 @@
 }*/
 #scoreboard {
   margin-top: 15px;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
 }
 #shooterOneScore {
-  font-size: 40px;
-  font-style: italic;
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
 }
 
 h1 {
@@ -112,7 +119,10 @@ h1 {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 45px;
+  font-family: 'Bahiana', cursive;
+
+
 }
 
 main {
