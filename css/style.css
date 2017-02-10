@@ -39,7 +39,7 @@
 }
 
 #rollCage {
-  width: 300px;
+  width: 270px;
   height: 420px;
   border: solid grey 1px;
   text-align: center;
@@ -58,13 +58,8 @@
   border: 0;
   outline: none;
   font-family: 'Anton', sans-serif;
-  /*position: absolute;*/
   display: inline-block;
   float: left;
-
-
-
-
 }
 
 #buttonTwo {
@@ -78,12 +73,8 @@
   display: inline-block;
   outline: none;
   font-family: 'Anton', sans-serif;
-  /*position: absolute;*/
   display: inline-block;
   float: right;
-
-
-
 }
 
 #shooter1 {

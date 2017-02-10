@@ -90,7 +90,9 @@ $(document).ready(function() {
 
     function playAgain() {
       $("#match").text('Tournament rules:  1st shooter to parse out 5 drinks WINS!');
-      $("#match").append('<br> <br> <div id="playerOneWins">0</div> <span id="tournamentColon">:</span> <div id="playerTwoWins">0</div>')
+      $("#match").append('<br> <br> <div id="playerOneWins">0</div> <span id="tournamentColon">:</span> <div id="playerTwoWins">0</div>');
+      $('#buttonOne').css('visibility', 'visible');
+      $('#buttonTwo').css('visibility', 'visible')
       ascore = 1;
       bscore = 1;
     }
