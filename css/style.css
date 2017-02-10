@@ -41,7 +41,9 @@
 #rollCage {
   width: 270px;
   height: 420px;
-  border: solid grey 1px;
+  /*border: solid grey 1px;*/
+  border-top: solid grey 1px;
+  border-bottom: solid grey 1px;
   text-align: center;
   border-radius: 8%;
   position: absolute;
@@ -113,7 +115,7 @@
   font-family: 'Anton', sans-serif;
   font-size: 30px;
   color: grey;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 #diceTotal {
