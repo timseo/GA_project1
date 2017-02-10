@@ -7,9 +7,10 @@ $(document).ready(function() {
   $bravoScore = $('#playerTwoWins');
   ascore = 1;
   bscore = 1;
-  var matchOriginal = $("#match").clone();
-  var playerOneWinsOriginal = $("#playerOneWins").clone();
-  var playerTwoWinsOriginal = $("#playerTwoWins").clone();
+
+  // var matchOriginal = $("#match").clone();
+  // var playerOneWinsOriginal = $("#playerOneWins").clone();
+  // var playerTwoWinsOriginal = $("#playerTwoWins").clone();
 
 
 
@@ -76,19 +77,22 @@ $(document).ready(function() {
     function gameWinner() {
       if (bscore === 3) {
       $('#match').text("Bravo wins while Alpha blacks out!");
+      setTimeout(playAgain, 1000)
       // $('#match').append($'<button {id="restartButton"}>Play Again?</button>');
 
     } else if (ascore === 3) {
       $('#match').text("Alpha wins while Bravo blacks out!");
+      setTimeout(playAgain, 1000)
       // $('#match').append($'<button {id="restartButton"}>Play Again?</button>');
     }
 
 }
 
     function playAgain() {
-      $("#playerTwoWins").replaceWith(playerTwoWinsOriginal.clone());
-      $("#playerOneWins").replaceWith(playerOneWinsOriginal.clone());
-      $("#match").replaceWith(matchOriginal.clone());
+      $("#match").text('Tournament rules:  1st shooter to parse out 10 drinks WINS!');
+      $("#match").append('<br> <br> <div id="playerOneWins">0</div> <span id="tournamentColon">:</span> <div id="playerTwoWins">0</div>')
+      ascore = 1;
+      bscore = 1;
     }
 
 
