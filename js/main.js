@@ -75,12 +75,12 @@ $(document).ready(function() {
 
 
     function gameWinner() {
-      if (bscore === 3) {
+      if (bscore === 5) {
       $('#match').text("Bravo wins while Alpha blacks out!");
       setTimeout(playAgain, 1000)
       // $('#match').append($'<button {id="restartButton"}>Play Again?</button>');
 
-    } else if (ascore === 3) {
+    } else if (ascore === 5) {
       $('#match').text("Alpha wins while Bravo blacks out!");
       setTimeout(playAgain, 1000)
       // $('#match').append($'<button {id="restartButton"}>Play Again?</button>');
@@ -89,7 +89,7 @@ $(document).ready(function() {
 }
 
     function playAgain() {
-      $("#match").text('Tournament rules:  1st shooter to parse out 10 drinks WINS!');
+      $("#match").text('Tournament rules:  1st shooter to parse out 5 drinks WINS!');
       $("#match").append('<br> <br> <div id="playerOneWins">0</div> <span id="tournamentColon">:</span> <div id="playerTwoWins">0</div>')
       ascore = 1;
       bscore = 1;

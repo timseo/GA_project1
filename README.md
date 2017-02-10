@@ -1,7 +1,8 @@
-#**SLOPPY DICE** 
+
+![MacDown Screenshot](https://github.com/timseo/GA_project1/blob/master/images/sloppy-dice-logo-grey.png?raw=true)
 ___
 
-_BECAUSE ITS GONNA GET SLOPPY_
+_ITS GONNA GET SLOPPY_
 
 
 ####This is a Super Fun dice game!     
@@ -18,6 +19,24 @@ Each player takes turns shooting 2 dice.  Should they roll a 7, 11 or Doubles. T
 I surmise that play would continue until someone drops to the floor but once again in consideration for pace of play. First player to 5 wins SLOPPY DICE!
 
 Please feel free to use IRL cup of spirits in place of virtual glass.
+####Technologies Used
+
+* HTML
+* Javascript
+* CSS
+* jQuery
+
+####Installation Instructions
+
+* Created Repository on github
+* Created Link hosted on github
+
+####Unsolved Problems
+* Stretch Goals
+* Still trying to get both buttons to populate after game reset
+* styling issues for smaller screens
+* Oscillating algorithms for optimal angle to roll dice
+
 
 ![MacDown Screenshot](https://raw.githubusercontent.com/timseo/GA_project1/master/assets/Photo%20Feb%2002%2C%2010%2000%2010%20PM.jpg)
 ![MacDown Screenshot](https://raw.githubusercontent.com/timseo/GA_project1/master/assets/Photo%20Feb%2002%2C%2010%2000%2016%20PM.jpg) 
