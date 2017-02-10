@@ -48,6 +48,7 @@
   border-radius: 8%;
   position: absolute;
   display: inline-block;
+  z-index: 1;
 }
 
 #buttonOne {
@@ -62,6 +63,7 @@
   font-family: 'Anton', sans-serif;
   display: inline-block;
   float: left;
+  z-index: 2;
 }
 
 #buttonTwo {
@@ -77,6 +79,7 @@
   font-family: 'Anton', sans-serif;
   display: inline-block;
   float: right;
+  z-index: 3;
 }
 
 #shooter1 {
