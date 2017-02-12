@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /*position: absolute;*/
 }
 #main-logo {
   display: block;
@@ -46,7 +47,7 @@
   border-bottom: solid grey 1px;
   text-align: center;
   border-radius: 8%;
-  position: absolute;
+  /*position: absolute;*/
   display: inline-block;
   z-index: 1;
 }

@@ -9,6 +9,10 @@ $(document).ready(function() {
   bscore = 1;
 
   // var nameAlpha = prompt("You are Also Known As_________?").toUpperCase();
+  function nameAlpha() {
+    prompt("Enter Team Name");
+    return $('#buttonOne').text(nameAlpha);
+  }
 
 
   function rollDice(min, max) {
@@ -94,7 +98,6 @@ $(document).ready(function() {
     ascore = 1;
     bscore = 1;
   }
-
 
 
 
