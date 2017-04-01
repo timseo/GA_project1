@@ -1,6 +1,12 @@
 * {
   margin: auto;
 }
+
+header {
+  margin: 40%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
 .container {
   /*position: relative;*/
   width: 100%;
@@ -31,6 +37,7 @@
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+
 
 }
 
@@ -245,8 +252,232 @@ h3 {
   font-size: 28px;
   color: red;
 }
+
 main {
   /*margin-bottom: 500px;*/
   /*height: 800px;*/
 
+}
+
+
+
+/*dice animation styling*/
+
+.containerA {
+  height: 50px;
+  margin-top: 20px;
+}
+.diceA {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  height: 26px;
+  width: 26px;
+  transform-style: preserve-3d;
+  animation: spin 9s infinite alternate;
+  margin-right: 10px;
+}
+.diceB {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  height: 26px;
+  width: 26px;
+  transform-style: preserve-3d;
+  animation: spin 9s infinite alternate;
+  margin-left: 10px;
+}
+img {
+  width: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(90deg) rotateY(360deg) translateZ(0px);
+  }
+}
+
+
+.side {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  opacity: .8;
+  background: white;
+  transition: .5s;
+}
+.dice:hover > .side {
+  border-radius: 50%;
+}
+.one {
+  transform: rotateX(90deg) translateZ(13px);
+  background: #f55;
+}
+.two {
+  transform: translateZ(13px);
+  background: #f55;
+}
+.three {
+  transform: rotateY(90deg) translateZ(13px);
+  background: #f55;
+}
+.four {
+  transform: rotateY(180deg) translateZ(13px);
+  background: #f55;
+}
+.five {
+  transform: rotateY(-90deg) translateZ(13px);
+  background: #f55;
+}
+.six {
+  transform: rotateX(-90deg) translateZ(13px);
+  background: #f55;
+}
+
+
+/*dice dots*/
+
+/*.diceDot{
+  border: solid 3px #aaa;
+  border-radius: 3px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 7px auto;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+
+  .dot{
+    border-radius: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #000;
+  }
+}
+
+.diceDot:first-child{
+  .dot{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+.diceDot:nth-child(2){
+  .dot{
+    &:first-child{
+      top: 20px;
+      left: 20px;
+    }
+    &:last-child{
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.diceDot:nth-child(3){
+  .dot{
+    &:first-child{
+      top: 15px;
+      left: 15px;
+    }
+    &:nth-child(2){
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    &:last-child{
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+}*/
+
+.diceDot:nth-child(4){
+  .dot{
+    &:first-child{
+      top: 15px;
+      left: 15px;
+    }
+    &:nth-child(2){
+      top: 15px;
+      right: 15px;
+    }
+    &:nth-child(3){
+      bottom: 15px;
+      left: 15px;
+    }
+    &:last-child{
+      bottom: 15px;
+      right: 15px;
+    }
+   }
+}
+
+.diceDot:nth-child(5){
+  .dot{
+    &:first-child{
+      top: 15px;
+      left: 15px;
+    }
+    &:nth-child(2){
+      top: 15px;
+      right: 15px;
+    }
+    &:nth-child(3){
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+    &:nth-child(4){
+      bottom: 15px;
+      left: 15px;
+    }
+    &:last-child{
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+}
+
+.diceDot:nth-child(6){
+  .dot{
+    &:first-child{
+      top: 15px;
+      left: 15px;
+    }
+    &:nth-child(2){
+      top: 15px;
+      right: 15px;
+    }
+    &:nth-child(3){
+      top: 0;
+      bottom: 0;
+      left: 15px;
+      margin: auto;
+    }
+    &:nth-child(4){
+      top: 0;
+      right: 15px;
+      bottom: 0;
+      margin: auto;
+    }
+    &:nth-child(5){
+      bottom: 15px;
+      left: 15px;
+    }
+    &:last-child{
+      bottom: 15px;
+      right: 15px;
+    }
+  }
 }
